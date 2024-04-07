@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Bản Thân</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .color-change {
+            animation: colorChange 10s infinite alternate;
+        }
+
+        @keyframes colorChange {
+            0% { background-color: rgba(30, 238, 231, 0.61); }
+            25% { background-color: rgba(93, 135, 227, 0.707); }
+            50% { background-color: rgba(104, 75, 129, 0.448); }
+            75% { background-color: rgba(138, 81, 137, 0.644); }
+            100% { background-color: rgba(146, 6, 104, 0.412); }
+        }
+        .profile-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+        img {
+            max-width: 50%;
+            max-height: auto;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body class="color-change">
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">GIỚI THIỆU BẢN THÂN</span> </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="gioithieu.html">Trang Chủ</a></li>
+                    <li><a href="about.html">Về Tôi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section id="main">
+            <h1>Chào Mừng!</h1>
+            <dl>
+                <li>Tên tôi là Nguyễn Tấn Vượng, sinh viên ngành công nghệ thông tin.</li> 
+                <li>Là một thành viên của clb ITClub.</li>
+            </dl>
+        </section>
+    </div>
+    <div class="profile-image">
+        <img src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/341704559_742425200890915_2907946278927070920_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kU7xpDmgXcQAb61RsA6&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfCZIVObb69iWx8fxOf_aTs0CC8QjOeLBxsipKuiwggT9g&oe=66175D47" alt="My photo" >
+    </div>
+
+</body>
+</html>
